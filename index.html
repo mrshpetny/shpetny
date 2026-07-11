@@ -293,7 +293,7 @@
         <!-- 4. DIAGNOSTIC ANATOMY -->
         <div class="section">
             <div class="section-title">Waste Profile</div>
-            <div class="fine-print" style="margin-bottom: 0.3rem;">Typical waste anatomy (standard $10k–$15k per month AWS bill)</div>
+            <div class="fine-print" style="margin-bottom: 0.3rem;">Typical waste anatomy (standard $10k–$15k/mo AWS bill)</div>
             <table class="diagnostic-table">
                 <tr><td class="label">Idle EC2 Instances (3x t3.medium, running 24/7, &lt;5% CPU)</td><td class="value">$351.36/mo</td></tr>
                 <tr><td class="label">Unattached EBS Volumes (5x gp3 500GB, no Attachment)</td><td class="value">$192.50/mo</td></tr>
@@ -304,7 +304,7 @@
                 <tr><td class="label">Idle ALB (Application Load Balancer, no traffic, 1x)</td><td class="value">$117.60/mo</td></tr>
                 <tr><td class="label">Unused CloudWatch Logs (retention &gt; 30 days, 120GB storage)</td><td class="value">$48.40/mo</td></tr>
                 <tr><td class="label">Underutilized EBS‑optimized instances (2x m5.large, &lt;20% utilization)</td><td class="value">$153.80/mo</td></tr>
-                <tr class="total-row"><td class="label">Total potential savings (typical)</td><td class="value">~$1,186 / month</td></tr>
+                <tr class="total-row"><td class="label">Total potential savings (typical)</td><td class="value">~$1,186/mo</td></tr>
             </table>    
             <div style="margin-top: 0.4rem; font-size: 0.85rem; color: #4b5563; line-height: 1.7;">
                 The $500 guarantee is the contractual minimum. Typical identified waste consistently exceeds this floor. Actionable CLI commands and console steps are detailed in the final report.
