@@ -207,6 +207,34 @@
             .footer { flex-direction: column; align-items: flex-start; }
         }
 
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            .document {
+                box-shadow: none;
+                border: none;
+                padding: 1rem;
+            }
+            .header {
+                margin-bottom: 1rem;
+            }
+            .section {
+                page-break-inside: avoid;
+            }
+            /* Strip backgrounds from badges to save ink */
+            span[style*="background: #f3f4f6"] {
+                background: transparent !important;
+                border: 1px solid #e5e7eb !important;
+                color: #0b1f33 !important;
+            }
+            /* Remove bottom borders from section titles if desired */
+            .section-title {
+                border-bottom-color: #cccccc;
+            }
+        }
+        
     </style>
 </head>
 <body>
