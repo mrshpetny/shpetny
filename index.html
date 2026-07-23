@@ -160,6 +160,17 @@
             color: #1f2937;
         }
 
+        .questions_ul {
+            color: #4b5563;
+        }
+        .questions_ul li::before {
+            content: "·";
+            position: absolute;
+            left: 0;
+            color: #4b5563;
+            font-weight: 700;
+        }
+
         /* -- Diagnostic Table -- */
         .diagnostic-table {
             width: 100%;
@@ -311,7 +322,7 @@
                     <span class="step">01.</span>
                     <span class="content">
                         <strong>Initiate Qualification</strong>
-                        <ul><li>1. Monthly AWS spend? (e.g., $15k/mo)</li><li>2. Any specific AWS pain points? (e.g., idle EC2, EBS)</li></ul>
+                        <ul class="questions_ul"><li>1. Monthly AWS spend? (e.g., $15k/mo)</li><li>2. Any specific AWS pain points? (e.g., idle EC2, EBS)</li></ul>
                         <span style="font-size: 0.95rem;">Reply with "Audit" to </span>
                         <span style="font-family: monospace; background: #f3f4f6; padding: 0.1rem 0.4rem; border-radius: 3px; font-size: 0.85rem;">
                             <a href="mailto:alexey.shpetny.work@gmail.com" style="color: #0b1f33; text-decoration: none;">alexey.shpetny.work@gmail.com</a>
